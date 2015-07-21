@@ -1,0 +1,72 @@
+/* fonts */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+
+
+/* body */
+body {
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+
+.thats-me {
+	width: 100%;
+	height: 90vh;
+	min-height: 400px; /* so it doesn't go out-sight when extra short devices */
+	background-color: #2ebd59;
+	position: relative;
+	padding: 20px;
+}
+.thats-me .row {
+	height: 100%;
+}
+.thats-me .row .col-xs-12 {
+	height: 100%;
+}
+
+.about {
+	/* text-align: center; */
+	margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.about p {
+	padding-bottom: 10px;
+}
+.about p.message {
+	padding-top: 20px;
+}
+.about span.antonio {
+	font-family: "Poiret One";
+	font-size: 32px;
+	font-weight: 600;
+	display: block;
+}
+.about span.work {
+	text-decoration: line-through;
+}
+.about span.cool-work {
+	font-family: "Indie Flower";
+}
+.about a {
+	color: white;
+	font-weight: 600;
+}
+.about a.btn {
+	background-color: transparent;
+	border-color: white;
+	font-size: 1em;
+	color: white;
+	font-weight: 400;
+}
+.about a.btn:hover {
+	background-color: white;
+	color: #2ebd59;
+}
