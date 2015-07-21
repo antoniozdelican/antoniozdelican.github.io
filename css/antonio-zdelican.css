@@ -12,6 +12,26 @@ body {
 }
 
 
+/* anchor */
+a {
+	color: #2ebd59;
+}
+a:hover {
+	color: #6eda44;
+}
+a:focus {
+	color: #6eda44;
+}
+
+
+/* row no margin to align with portfolio */
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+/* thats-me */
 .thats-me {
 	width: 100%;
 	height: 90vh;
@@ -23,7 +43,7 @@ body {
 .thats-me .row {
 	height: 100%;
 }
-.thats-me .row .col-xs-12 {
+.thats-me .col-xs-12 {
 	height: 100%;
 }
 
@@ -69,4 +89,86 @@ body {
 .about a.btn:hover {
 	background-color: white;
 	color: #2ebd59;
+}
+
+
+/* my-skillz */
+.my-skill {
+	border-bottom: 1px solid #2ebd59;
+}
+.my-skill h3 {
+
+}
+.badge.years-active {
+	font-size: 75%;
+}
+.label.label-beginner {
+	background-color: #5cb85c;
+}
+.label.label-intermediate {
+	background-color: #337ab7;
+}
+.label.label-advanced {
+	background-color: #d9534f;
+}
+.label.label-expert {
+	background-color: #2E2F33;
+}
+/* portfolio */
+.portfolio {
+	border: 1px solid #dddddd;
+	border-radius: 4px 4px 0 0;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/* swiper */
+.swiper-container {
+	width: 100%;
+	height: 250px;
+	/* margin: 20px auto; */
+}
+.swiper-slide {
+	/* text-align: center; */
+  font-size: 18px;
+  background: #fff;
+  width: 250px;
+  max-width: 100%; /* 100% is 250px but can go smaller for smaller mobiles */
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.portfolio-item {
+	cursor: pointer;
+	border-bottom: 1px solid #dddddd;
+}
+.portfolio-item h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+	font-size: 18px;
+}
+.portfolio-item .hidden-description,
+.portfolio-item .hidden-link {
+	display: none; /* this goes to modal and not showing up on main page */
+}
+/* modal */
+.modal {
+	font-size: 14px;
+}
+.modal h3.modal-title {
+	font-size: 18px;
+	margin-bottom: 10px;
 }

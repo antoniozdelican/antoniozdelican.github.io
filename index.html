@@ -10,6 +10,7 @@
 
   	<!-- CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
 		<link rel="stylesheet" href="css/antonio-zdelican.css">
 	</head>
 	<body>
@@ -18,21 +19,22 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="about">
-                  <p>
-                    Hi, I'm
-                  </p>
-                  <p class="name">
-                    <span class="antonio">ANTONIO</span><span class="antonio">ZDELICAN</span>
-                  </p>
-                  <p class="skills">
-                    <a href="#">web developer</a> | <br><a href="#">surfer</a> | <br><a href="#">enterprise systems engineer</a> | <br><a href="#">videographer</a>
-                  </p>
-                  <p class="message">
-                    So, do you have some <br><span class="work">work</span> <span class="cool-work">cool work</span> for me?
-                  </p>
-                </div>
+            <p>
+              Hi, I'm
+            </p>
+            <p class="name">
+              <span class="antonio">ANTONIO</span><span class="antonio">ZDELICAN</span>
+            </p>
+            <p class="skills">
+              <a href="#webDevelopment">web developer</a> | <br><a href="#">surfer</a> | <br><a href="#">enterprise systems engineer</a> | <br><a href="#">videographer</a>
+            </p>
+            <p class="message">
+              So, do you have some <br><span class="work">work</span> <span class="cool-work">cool work</span> for me?
+            </p>
+          </div><!-- /about -->
         </div>
       </div>
+
       <!--<div class="about">
         <p>
           Hi, I'm
@@ -47,7 +49,84 @@
           So, do you have some <br><span class="work">work</span> <span class="cool-work">cool work</span> for me?
         </p>
       </div>-->
-    </div>
+    </div><!-- /thats-me -->
+
+    <div class="container my-skill" id="webDevelopment">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Web development</h3>
+          <p>level: <span class="label label-advanced">advanced</span></p>
+          <p>years active: <span class="badge years-active">4</span></p>
+          <p>skills: <a href="#">Ruby on Rails</a>, HTML5, CSS3, jQuery, Git, Bootstrap, Project Management, Photoshop</p>
+          <p>looking for: part-time / freelance job</p>
+        </div>
+      </div>
+
+      <div class="portfolio portfolio-web-development">
+        <h3>Portfolio</h3>
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="portfolio-item">
+                <img src="images/sketch-casts.jpg" class="img-responsive">
+                <h3>SketchCasts</h3>
+                <p class="hidden-description">
+                  Cool project I worked on with my friend designer. Worked in Ruby on Rails and used some solutions (Devise, Omniauth) and APIs (Amazon AWS S3, PayPal) for different challenges that I came across. With tight schedule of only 3 weeks we managed to publish it. So far, great feedback from the community and quite a number of subscribers.
+                </p>
+                <p class="hidden-link">
+                  <a href="http://www.sketchcasts.net/" target="_blank">http://www.sketchcasts.net/</a>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="portfolio-item">
+                <img src="images/clube-barba-rija.jpg" class="img-responsive">
+                <h3>Clube Barba Rija</h3>
+                <p class="hidden-description">
+                  Cool project I worked on with my friend designer. Worked in Ruby on Rails and used some solutions (Devise, Omniauth) and APIs (Amazon AWS S3, PayPal) for different challenges that I came across. With tight schedule of only 3 weeks we managed to publish it. So far, great feedback from the community and quite a number of subscribers.
+                </p>
+                <p class="hidden-link">
+                  <a href="http://clube.barbarija.com/" target="_blank">http://clube.barbarija.com/</a>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              Slide 3
+            </div>
+            <div class="swiper-slide">
+              Slide 4
+            </div>
+            <div class="swiper-slide">
+              Slide 5
+            </div>
+          </div><!-- /swiper-wrapper -->
+          <div class="swiper-scrollbar"></div>
+        </div><!-- /swiper-container -->
+
+        <!-- Modal (empty) -->
+        <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="portfolioModalLabel"></h3>
+                <p class="modal-description"></p>
+                <p class="modal-link">
+                  <a href="" target="_blank"></a>
+                </p>
+              </div>
+              <div class="modal-body">
+                <img src="" class="img-responsive">
+              </div>
+            </div>
+          </div>
+        </div><!-- /modal -->
+
+      </div><!-- /portfolio-web-development -->
+    </div><!-- /my-skill -->
+
 
 
 		<!-- Placed at the end of the document so the pages load faster -->
@@ -55,6 +134,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<!-- JS -->
 		<script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
 		<script src="js/antonio-zdelican.js"></script>
 	</body>
 </html>
