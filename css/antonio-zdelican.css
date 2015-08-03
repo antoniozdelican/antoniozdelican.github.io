@@ -34,7 +34,7 @@ a:focus {
 /* thats-me */
 .thats-me {
 	width: 100%;
-	height: 90vh;
+	height: 95vh;
 	min-height: 400px; /* so it doesn't go out-sight when extra short devices */
 	background-color: #2ebd59;
 	position: relative;
@@ -57,19 +57,39 @@ a:focus {
   transform: translate(-50%, -50%);
   color: white;
 }
-.about p {
+.about .hi,
+.about .me,
+.about .skills,
+.about .message {
 	padding-bottom: 10px;
 }
-.about p.message {
-	padding-top: 20px;
+.about .message {
+	padding-top: 30px;
 }
-.about span.skill  {
-	display: block;
+.about .me {
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
-.about span.antonio {
+.about .me h1 {
 	font-family: "Poiret One";
 	font-size: 32px;
 	font-weight: 600;
+	line-height: inherit;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 20px;
+}
+.about .me h1 span {
+	display: block;
+}
+.about .img-profile {
+	width: 100px;
+	height: 100px;
+}
+.about span.skill  {
 	display: block;
 }
 .about span.work {
@@ -96,11 +116,13 @@ a:focus {
 
 
 /* my-skillz */
-.my-skill {
+.my-skill,
+.contact {
 	/* border-bottom: 1px solid #2ebd59; */
+	padding-top: 15px; 
 }
 .my-skill h3 {
-
+	font-size: 20px;
 }
 .badge.years-active {
 	font-size: 75%;
@@ -158,7 +180,7 @@ a:focus {
 }
 .portfolio-item {
 	cursor: pointer;
-	border-bottom: 1px solid #dddddd;
+	/*border-bottom: 1px solid #dddddd;*/
 }
 .portfolio-item h3 {
 	margin-top: 10px;
