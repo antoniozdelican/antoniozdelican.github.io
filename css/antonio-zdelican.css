@@ -63,6 +63,9 @@ a:focus {
 .about p.message {
 	padding-top: 20px;
 }
+.about span.skill  {
+	display: block;
+}
 .about span.antonio {
 	font-family: "Poiret One";
 	font-size: 32px;
@@ -94,7 +97,7 @@ a:focus {
 
 /* my-skillz */
 .my-skill {
-	border-bottom: 1px solid #2ebd59;
+	/* border-bottom: 1px solid #2ebd59; */
 }
 .my-skill h3 {
 
@@ -134,8 +137,8 @@ a:focus {
 	/* text-align: center; */
   font-size: 18px;
   background: #fff;
-  width: 250px;
-  max-width: 100%; /* 100% is 250px but can go smaller for smaller mobiles */
+  width: 320px;
+  max-width: 100%; /* 100% is 320px but can go smaller for smaller mobiles */
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,6 +167,8 @@ a:focus {
 .portfolio-item .hidden-link {
 	display: none; /* this goes to modal and not showing up on main page */
 }
+
+
 /* modal */
 .modal {
 	font-size: 14px;
@@ -171,4 +176,14 @@ a:focus {
 .modal h3.modal-title {
 	font-size: 18px;
 	margin-bottom: 10px;
+}
+.modal .modal-body {
+	text-align: center;
+}
+.modal .modal-body img {
+	display: none;
+}
+.modal .modal-body iframe {
+	display: none;
+	max-width: 100%;
 }

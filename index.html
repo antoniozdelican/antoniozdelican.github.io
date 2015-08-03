@@ -26,7 +26,18 @@
               <span class="antonio">ANTONIO</span><span class="antonio">ZDELICAN</span>
             </p>
             <p class="skills">
-              <a href="#webDevelopment">web developer</a> | <br><a href="#">surfer</a> | <br><a href="#">enterprise systems engineer</a> | <br><a href="#">videographer</a>
+              <span class="skill">
+                <a href="#webDevelopment">web developer</a> |
+              </span>
+              <span class="skill">
+                <a href="#surf">surfer</a> |
+              </span>
+              <span class="skill">
+                <a href="#">enterprise systems engineer</a> |
+              </span>
+              <span class="skill">
+                <a href="#">organizer</a> |
+              </span>
             </p>
             <p class="message">
               So, do you have some <br><span class="work">work</span> <span class="cool-work">cool work</span> for me?
@@ -55,10 +66,22 @@
       <div class="row">
         <div class="col-xs-12">
           <h3>Web development</h3>
-          <p>level: <span class="label label-advanced">advanced</span></p>
-          <p>years active: <span class="badge years-active">4</span></p>
-          <p>skills: <a href="#">Ruby on Rails</a>, HTML5, CSS3, jQuery, Git, Bootstrap, Project Management, Photoshop</p>
-          <p>looking for: part-time / freelance job</p>
+          <p>level: <span class="label label-advanced">Advanced</span></p>
+          <p>years active: <!--<span class="badge years-active">4</span>-->5</p>
+          <p>skills:
+            <span class="label label-default">Ruby on Rails</span>
+            <span class="label label-default">HTML5</span>
+            <span class="label label-default">CSS3</span>
+            <span class="label label-default">jQuery</span>
+            <span class="label label-default">Git</span>
+            <span class="label label-default">Bootstrap</span>
+            <span class="label label-default">Project Management</span>
+            <span class="label label-default">Photoshop</span>
+          </p>
+          <p>looking for:
+            <a href="#">freelance job</a>,
+            <a href="#">part-time job</a>
+          </p>
         </div>
       </div>
 
@@ -105,27 +128,100 @@
           <div class="swiper-scrollbar"></div>
         </div><!-- /swiper-container -->
 
-        <!-- Modal (empty) -->
-        <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h3 class="modal-title" id="portfolioModalLabel"></h3>
-                <p class="modal-description"></p>
-                <p class="modal-link">
-                  <a href="" target="_blank"></a>
+      </div><!-- /portfolio-web-development -->
+    </div><!-- /my-skill -->
+
+    <div class="container my-skill" id="surf">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Surf</h3>
+          <p>level: <span class="label label-intermediate">Intermediate</span></p>
+          <p>years active: <!--<span class="badge years-active">4</span>-->4</p>
+          <p>skills:
+            <span class="label label-default">Bottom turn</span>
+            <span class="label label-default">Top turn</span>
+            <span class="label label-default">Cutback</span>
+            <span class="label label-default">Carve</span>
+            <span class="label label-default">Trim</span>
+            <span class="label label-default">Regular</span>
+            <span class="label label-default">Shaka</span>
+            <span class="label label-default">GoPro</span>
+          </p>
+          <p>looking for:
+            <a href="#">minor sponsorship</a>,
+            <a href="#">support</a>,
+            <a href="#">photographer</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="portfolio portfolio-surf">
+        <h3>Portfolio</h3>
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="portfolio-item">
+                <img src="images/surf-1.jpg" class="img-responsive">
+                <h3>Bla</h3>
+                <p class="hidden-description">
+                  Something
+                </p>
+                <p class="hidden-link">
+                  <a href="https://instagram.com/antoniozdelican/" target="_blank">https://instagram.com/antoniozdelican/</a>
                 </p>
               </div>
-              <div class="modal-body">
-                <img src="" class="img-responsive">
+            </div>
+            <div class="swiper-slide">
+              <div class="portfolio-item">
+                <img src="images/surf-thumbnail.jpg" class="img-responsive">
+                <h3>Ericeira surf short clip</h3>
+                <p class="hidden-description">
+                  Bla bla
+                </p>
+                <p class="hidden-link video">
+                  <a href="https://vimeo.com/125836025" target="_blank" data-iframe-link="https://player.vimeo.com/video/125836025">https://vimeo.com/125836025</a>
+                </p>
               </div>
             </div>
-          </div>
-        </div><!-- /modal -->
+            <div class="swiper-slide">
+              Slide 3
+            </div>
+            <div class="swiper-slide">
+              Slide 4
+            </div>
+            <div class="swiper-slide">
+              Slide 5
+            </div>
+          </div><!-- /swiper-wrapper -->
+          <div class="swiper-scrollbar"></div>
+        </div><!-- /swiper-container -->
 
       </div><!-- /portfolio-web-development -->
     </div><!-- /my-skill -->
+
+    <!-- Modal (empty) -->
+    <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title" id="portfolioModalLabel"></h3>
+            <p class="modal-description"></p>
+            <p class="modal-link">
+              <a href="" target="_blank"></a>
+            </p>
+          </div>
+          <div class="modal-body">
+            <!-- empty img for images -->
+            <img src="" class="img-responsive">
+            <!-- empty (hidden) iframe for videos -->
+            <iframe src="" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div><!-- /modal -->
 
 
 
