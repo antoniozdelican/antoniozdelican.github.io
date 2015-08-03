@@ -117,6 +117,9 @@ a:focus {
 .label.label-expert {
 	background-color: #2E2F33;
 }
+.label.label-default {
+	display: inline-block;
+}
 /* portfolio */
 .portfolio {
 	border: 1px solid #dddddd;
@@ -186,4 +189,29 @@ a:focus {
 .modal .modal-body iframe {
 	display: none;
 	max-width: 100%;
+}
+
+
+/* contact */
+.contact .glyphicon {
+	font-size: .8em;
+	border-radius: 25px;
+	color: white;
+	padding: .3em;
+}
+.contact .glyphicon.glyphicon-ok {
+	background-color: #5cb85c;
+}
+.contact .glyphicon.glyphicon-minus {
+	background-color: #d9534f;
+}
+
+
+/* footer */
+footer {
+	margin-top: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+  font-size: 0.8em;
 }
