@@ -138,10 +138,10 @@ h2 {
 	font-size: 75%;
 }
 .label.label-beginner {
-	background-color: #5cb85c;
+	background-color: #2ebd59;
 }
 .label.label-intermediate {
-	background-color: #337ab7;
+	background-color: #21a2d6;
 }
 .label.label-advanced {
 	background-color: #d9534f;
@@ -228,6 +228,9 @@ h2 {
 
 
 /* contact */
+.contact {
+
+}
 .contact .glyphicon {
 	font-size: .8em;
 	border-radius: 25px;
@@ -235,21 +238,22 @@ h2 {
 	padding: .3em;
 }
 .contact .glyphicon.glyphicon-ok {
-	background-color: #5cb85c;
+	background-color: #2ebd59;
 }
 .contact .glyphicon.glyphicon-minus {
 	background-color: #d9534f;
 }
-
-
-/* form */
-#formMessages {
-	display: none;
-}
-#contactForm {
-	padding-top: 10px;
+.contact .img-social {
+	width: 30px;
+	height: 30px;
+	border-radius: 4px;
+	margin-left: 5px;
 }
 
+
+.emaila {
+		color: black;
+}
 
 /* footer */
 footer {

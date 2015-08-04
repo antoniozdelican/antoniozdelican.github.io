@@ -3,12 +3,21 @@ $(function(){
 	$('a[href^="#"]').on('click', function (e) {
 	    e.preventDefault();
 
+	    var id = $(this).attr('href');
+	    var completeCalled = false;
+
 	    var target = $(this.hash).offset();
 	    var $target = $(target);
 
 	    $('html, body').stop().animate({
 	         'scrollTop': $(this.hash).offset().top
-	    }, 900, 'swing');
+	    }, 900, 'swing', function() {
+	    	if (id.indexOf('contact') >= 0 && !completeCalled) {
+	    		// so the callback isn't called twice
+	    		completeCalled = true;
+	    		$('a.email').fadeOut(700).fadeIn(700).fadeOut(700).fadeIn(700);
+	    	}
+	    });
 	});
 });
 
