@@ -33,10 +33,10 @@ h2 {
 
 
 /* row no margin to align with portfolio */
-.row {
+/* .row {
 	margin-left: 0;
 	margin-right: 0;
-}
+} */
 
 
 /* thats-me */
@@ -162,6 +162,33 @@ h2 {
 	/* margin-top: 10px; */
 	margin-bottom: 10px;
 }
+
+/* portfolio new */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.my-row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.my-col {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+.my-col img {
+  width: 100%;
+}
+h3.my-span {
+  font-size: 14px;
+}
+
+
 /* swiper */
 .swiper-container {
 	width: 100%;
@@ -250,10 +277,6 @@ h2 {
 	margin-left: 5px;
 }
 
-
-.emaila {
-		color: black;
-}
 
 /* footer */
 footer {
