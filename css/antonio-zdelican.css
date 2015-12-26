@@ -23,6 +23,17 @@ h3 {
 h1 {
   text-transform: uppercase;
 }
+@media (min-width: 768px) {
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+}
 @media (min-width: 992px) {
   h1 {
     font-size: 44px;
@@ -62,6 +73,11 @@ a:focus {
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
 }
+@media (min-width: 768px) {
+  .thats-me {
+    border-bottom: 0;
+  }
+}
 
 .col-img-profile {
   padding-left: 0;
@@ -82,10 +98,20 @@ a:focus {
   transform: translateY(-50%);*/
   padding-top: 15px;
   font-size: 14px;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .description {
+    padding-top: 140px;
+    font-size: 16px;
+    text-align: center;
+  }
 }
 @media (min-width: 992px) {
   .description {
+    padding-top: 170px;
     font-size: 16px;
+    text-align: center;
   }
 }
 
@@ -162,7 +188,7 @@ a:focus {
   -webkit-transition: .2s;
   transition: .2s;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .label.label-default {
     font-size: 14px;
   }
@@ -181,7 +207,7 @@ a:focus {
   padding-left: 2px;
   padding-right: 2px;
 }
-@media (min-width: 992px) {
+@media (min-width: 776px) {
   .col-thing {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -256,7 +282,7 @@ footer {
   padding-left: 10px;
   padding-right: 10px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .list-inline.social-buttons li {
     font-size: 20px;
   }
