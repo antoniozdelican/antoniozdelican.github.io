@@ -127,6 +127,15 @@ a:focus {
   /*padding-top: 80px;*/
 }
 
+.container-section {
+  padding-top: 5px;
+}
+@media (min-width: 768px) {
+  .container-section {
+    padding-top: 10px;
+  }
+}
+
 .section-header {
   /*padding-top: 20px;
   padding-bottom: 30px;*/
